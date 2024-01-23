@@ -1,12 +1,15 @@
 import React from "react";
 import Login from "./Login";
 
+let userIsRegistered = true;
+
 
 function App() {
   return (
     <div className="container">
-      <h1>Hello</h1>
-      <Login/>
+      <Login
+        isRegistered = {userIsRegistered}
+      />
     </div>
   );
 }
